@@ -63,10 +63,11 @@ def main(args):
         image_tensor = [image.to(model.device, dtype=torch.float16) for image in image_tensor]
     else:
         image_tensor = image_tensor.to(model.device, dtype=torch.float16)
-
-    while True:
+    temp=1
+    while temp==1:#True:
+        temp+=1
         try:
-            inp = "What is it"#input(f"{roles[0]}: ")
+            inp = "What are the things I should be cautious about when visiting this place?"#input(f"{roles[0]}: ")
         except EOFError:
             inp = ""
         if not inp:
