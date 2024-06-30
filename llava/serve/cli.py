@@ -66,7 +66,7 @@ def main(args):
 
     while True:
         try:
-            inp = input(f"{roles[0]}: ")
+            inp = "What is it"#input(f"{roles[0]}: ")
         except EOFError:
             inp = ""
         if not inp:
